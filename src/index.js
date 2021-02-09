@@ -77,6 +77,43 @@ function renderRamInfo(ramObj){
     
 }
 
+ramRating.addEventListener('submit', updateRamInfo)
+
+function updateRamInfo(event){
+
+    event.preventDefault();
+
+    const ramen = event.target.firstChild
+    const ramenId = ramen.getAttribute('div-id')
+    const ramenIdVal = parseInt(ramenId)
+    // console.log(ramenIdVal)
+
+    // console.log(event.target.firstChild.element[0])
+
+    const ramNumRating = event.target.firstChild.childNodes
+
+    const ramNumRatingVal = ramNumRating[2].value
+
+    const ramCommentVal = ramNumRating[6].textContent.value
+
+    ramRating.rating.value = ramNumRatingVal
+
+    // console.log(ramNumRatingVal)
+
+    // create fetch 
+
+    fetch(`${url}/${ramenIdVal}`)
+        .then(response => response.json())
+        .then(data => console.log(data))
+}
+
+// function editRamen(ramObj){
+//     const 
+// }
+
+
+
+
 fetchRamen()
 
 })
