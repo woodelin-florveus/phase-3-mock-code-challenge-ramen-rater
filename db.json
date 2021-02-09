@@ -21,24 +21,26 @@
       "name": "Nirvana Shiromaru",
       "restaurant": "Ippudo",
       "image": "./assets/ramen/nirvana.jpg",
-      "rating": "7",
-      "comment": "Do buy the hype."
+      "rating": "9",
+      "comment": "My new favorite spot",
+      "ramenRating": "4",
+      "ramenComment": "This is Sparta"
     },
     {
       "id": 4,
       "name": "Gyukotsu Ramen",
       "restaurant": "Za-Ya Ramen",
       "image": "./assets/ramen/gyukotsu.jpg",
-      "rating": 8,
-      "comment": "Good to the last drop."
+      "rating": "4",
+      "comment": "sdfkl"
     },
     {
       "id": 5,
       "name": "Kojiro Red Ramen",
       "restaurant": "Ramen-Ya",
       "image": "./assets/ramen/kojiro.jpg",
-      "rating": 6,
-      "comment": "Perfect for a cold night."
+      "rating": "7",
+      "comment": "asjdfkljs"
     }
   ]
 }
